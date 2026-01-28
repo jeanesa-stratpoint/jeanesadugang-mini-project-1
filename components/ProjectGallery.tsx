@@ -1,4 +1,3 @@
-// components/ProjectGallery.tsx
 "use client";
 
 import { useState } from "react";

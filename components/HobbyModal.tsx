@@ -1,4 +1,3 @@
-// components/HobbyModal.tsx
 interface HobbyModalProps {
     isOpen: boolean;
     onClose: () => void;

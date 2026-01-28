@@ -1,5 +1,3 @@
-// components/SkillCard.tsx
-
 interface SkillProps {
 	name: string;
 	icon: string;

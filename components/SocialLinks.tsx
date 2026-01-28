@@ -7,7 +7,7 @@ const SOCIAL_LINKS = {
 };
 
 interface SocialLinksProps {
-    className?: string; // Optional prop to override styles
+    className?: string;
 }
 
 export default function SocialLinks({ className }: SocialLinksProps) {

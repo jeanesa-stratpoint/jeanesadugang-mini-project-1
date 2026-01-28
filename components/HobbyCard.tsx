@@ -1,4 +1,3 @@
-// components/HobbyCard.tsx
 interface HobbyCardProps {
     title: string;
     image: string;

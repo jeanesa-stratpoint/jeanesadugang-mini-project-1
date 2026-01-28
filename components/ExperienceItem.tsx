@@ -1,4 +1,3 @@
-// components/ExperienceItem.tsx
 import { Calendar } from "lucide-react";
 
 interface Activity {

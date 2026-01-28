@@ -1,20 +1,18 @@
-// app/page.tsx
 import Image from "next/image";
 import profilePic from "@/public/jeanesa-photo.png";
 import SocialLinks from "@/components/SocialLinks";
 
 export default function Homepage() {
 	return (
-		<div className="relative w-full overflow-hidden bg-white">
-			{/* SECTION 1: HERO (White/Pink Background) */}
-			<section className="relative items-center justify-center pt-40 w-full">
+		<div className="relative w-full overflow-hidden ">
+			<section className="relative z-0 bg-white items-center justify-center pt-40 w-full ">
 				{/* Soft Background Glows*/}
-				<div className="absolute top-0 left-0 w-full h-full -z-10">
+				<div className="absolute inset-0 z-0 pointer-events-none">
 					<div className="absolute top-[-10%] left-[-30%] w-[60%] h-[60%] bg-[#BD2667]/30 blur-[180px] rounded-full" />
 					<div className="absolute top-[30%] right-[-10%] w-[50%] h-[50%] bg-[#6D18B4]/30 blur-[180px] rounded-full" />
 				</div>
 
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
+				<div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
 					<div className="flex-1 space-y-6">
 						<h2 className="text-xl font-medium text-black">Hello There!</h2>
 						<h1 className="text-6xl font-extrabold text-black">
