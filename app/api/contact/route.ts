@@ -4,7 +4,11 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
     try {
-        const { name, email, subject, message } = await req.json();
+        const { name, email, subject, message, honeypot } = await req.json();
+        
+        if (honeypot) {
+            return NextResponse.json({ message: "Bot detected" }, { status: 400 });
+        }
 
         // Create a transporter (using Gmail as an example)
         const transporter = nodemailer.createTransport({
@@ -21,7 +25,7 @@ export async function POST(req: Request) {
             to: process.env.EMAIL_USER,
             subject: `New Contact Form: ${subject}`,
             text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-            html: generateEmailHTML({ name, email, subject, message }), // Use the imported function
+            html: generateEmailHTML({ name, email, subject, message }), 
         };
 
         // Send email

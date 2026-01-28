@@ -11,6 +11,7 @@ export default function ContactPage() {
         email: "",
         subject: "",
         message: "",
+        honeypot: "",
     });
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -26,7 +27,7 @@ export default function ContactPage() {
 
             if (response.ok) {
                 alert("Message sent successfully!");
-                setFormData({ name: "", email: "", subject: "", message: "" });
+                setFormData({ name: "", email: "", subject: "", message: "", honeypot: "" });
             } else {
                 alert("Failed to send message.");
             }
@@ -39,6 +40,7 @@ export default function ContactPage() {
     };
 
     return (
+
         <div className="flex flex-col relative w-full overflow-hidden bg-white">
             <section>
                 <div className="relative w-full max-w-7xl mx-auto mt-20 px-4 sm:px-6 lg:px-8">
@@ -49,6 +51,7 @@ export default function ContactPage() {
             </section>
 
             <section className="w-full bg-black mt-5 py-20 relative px-4 sm:px-6 lg:px-8">
+
                 <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
                     <div className="absolute top-[10%] -left-[10%] w-[50%] h-[50%] 
                                     bg-[#BD2667] opacity-60 blur-[120px] 
@@ -77,6 +80,14 @@ export default function ContactPage() {
 
                         {/* Right Side: The Form */}
                         <div className="p-6 md:p-10">
+                            <div className="hidden" aria-hidden="true">
+                                <input
+                                    type="text"
+                                    name="honeypot"
+                                    value={formData.honeypot}
+                                    onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                                />
+                            </div>
                             <div className="bg-white rounded-2xl p-8 shadow-inner">
                                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                                     <div className="flex flex-col gap-1">
