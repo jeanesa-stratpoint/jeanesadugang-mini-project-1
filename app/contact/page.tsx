@@ -97,7 +97,7 @@ export default function ContactPage() {
                                             type="text"
                                             value={formData.name}
                                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                            className="w-full border-b border-gray-300 py-2 focus:outline-none 
+                                            className="w-full border-b border-gray-300 py-2 text-black focus:outline-none 
                                                         focus:border-[#BD2667] transition-colors"
                                         />
                                     </div>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                                             type="email"
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                            className="w-full border-b border-gray-300 py-2 focus:outline-none 
+                                            className="w-full border-b border-gray-300 py-2 text-black focus:outline-none 
                                                         focus:border-[#BD2667] transition-colors"
                                         />
                                     </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                                             type="text"
                                             value={formData.subject}
                                             onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                                            className="w-full border-b border-gray-300 py-2 focus:outline-none 
+                                            className="w-full border-b border-gray-300 py-2 text-black focus:outline-none 
                                                         focus:border-[#BD2667] transition-colors"
                                         />
                                     </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                                             rows={6}
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                            className="w-full border border-gray-300 rounded-md p-3 mt-1 
+                                            className="w-full border border-gray-300 rounded-md p-3 mt-1 text-black
                                                         focus:outline-none focus:ring-1 focus:ring-[#BD2667] 
                                                         focus:border-[#BD2667] transition-all resize-none"
                                         />
