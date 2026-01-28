@@ -4,7 +4,7 @@ import { FEEDBACK_DATA } from "@/data/feedback";
 
 export default function FeedbackPage() {
     return (
-        <div className="flex flex-col min-h-screen relative w-full overflow-hidden">
+        <div className="flex flex-col min-h-screen relative w-full overflow-hidden bg-white">
             <main className="grow">
                 <section>
                     <div className="relative w-full max-w-7xl mx-auto mt-30 px-4 sm:px-6 lg:px-8">

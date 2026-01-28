@@ -11,7 +11,7 @@ import { HOBBIES_DATA } from "@/data/hobbies";
 export default function AboutMe() {
     const [selectedHobby, setSelectedHobby] = useState<typeof HOBBIES_DATA[0] | null>(null);
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden bg-white">
             {/* DESCRIPTION */}
             <section>
                 <div className="relative w-full max-w-7xl mx-auto mt-30 px-4 sm:px-6 lg:px-8">

@@ -17,7 +17,7 @@ export default async function ProjectPage({ params }: PageProps) {
     if (!project) return notFound();
 
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden bg-white">
             {/* Header */}
             <section className="max-w-7xl mx-auto mt-20 px-4">
                 <div className="flex flex-1 items-center justify-between">

@@ -5,7 +5,7 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Homepage() {
 	return (
-		<div className="relative w-full overflow-hidden">
+		<div className="relative w-full overflow-hidden bg-white">
 			{/* SECTION 1: HERO (White/Pink Background) */}
 			<section className="relative items-center justify-center pt-40 w-full">
 				{/* Soft Background Glows*/}

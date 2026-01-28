@@ -5,7 +5,7 @@ import { PROJECTS_DATA } from "@/data/projects";
 
 export default function ProjectsPage() {
     return (
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden bg-white">
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
             </div>
 
